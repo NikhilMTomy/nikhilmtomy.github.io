@@ -1,0 +1,71 @@
+div.section {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap-reverse;
+}
+h1 {
+	font-size: 48px;
+	font-weight: 100;
+}
+div.left-panel {
+	display: flex;
+	flex-direction: column;
+	flex: 0 0 400px;
+	flex-wrap: wrap;
+	padding: 32px;
+}
+div.left-panel div.label {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 24px;
+	height: 24px;
+	margin-right: 4px;
+}
+div.left-panel > div.title {
+	font-size: 24px;
+	font-weight: 600;
+}
+div.left-panel a {
+	text-decoration: none;
+	color: #DFF3E3;
+}
+div.right-panel {
+	flex: 1;
+	min-width: 600px;
+	max-width: 1000px;
+	color: black;
+	background-color: #fff;
+	padding: 32px;
+}
+div.right-panel > div.title {
+	font-size: 32px;
+}
+div.right-panel > div.content {
+	margin-left: 32px;
+}
+div.right-panel .text-small {
+	font-size: 12px;
+	color: #333;
+}
+div.right-panel a {
+	text-decoration: none;
+	color: inherit;
+	overflow-wrap: anywhere;
+}
+div.horizontal-line {
+	height: 1px;
+	background-color: #fff;
+	margin: 4px 4px;
+}
+.qwiklab-certificates {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+
+.qwiklab-certificates > img {
+	max-width: 64px;
+	max-height: 64px;
+}
