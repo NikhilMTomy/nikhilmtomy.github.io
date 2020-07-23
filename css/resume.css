@@ -4,12 +4,11 @@ body {
 div.section {
 	display: flex;
 	flex-direction: row;
-	flex-wrap: wrap-reverse;
 	page-break-after: always;
 }
 h1 {
-	font-size: 48px;
-	font-weight: 100;
+	font-size: 32px;
+	font-weight: 900;
 }
 div.left-panel {
 	display: flex;
@@ -19,32 +18,24 @@ div.left-panel {
 	flex-wrap: wrap;
 	padding: 32px;
 }
-div.left-panel div.label {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	width: 24px;
-	height: 24px;
-	margin-right: 4px;
-}
 div.left-panel > div.title {
-	font-size: 24px;
+	font-size: 18px;
 	font-weight: 600;
 }
 div.left-panel a {
 	text-decoration: none;
 	color: #DFF3E3;
+	overflow-wrap: break-word;
 }
 div.right-panel {
 	flex: 1;
-	min-width: 600px;
-	max-width: 1000px;
 	color: black;
 	background-color: #fff;
 	padding: 32px;
 }
 div.right-panel > div.title {
-	font-size: 32px;
+	font-size: 18px;
+	font-weight: bold;
 }
 div.right-panel > div.content {
 	margin-left: 32px;
@@ -56,7 +47,7 @@ div.right-panel .text-small {
 div.right-panel a {
 	text-decoration: none;
 	color: inherit;
-	overflow-wrap: anywhere;
+	overflow-wrap: break-word;
 }
 div.horizontal-line {
 	height: 1px;
@@ -72,9 +63,9 @@ div.horizontal-line {
 }
 
 .qwiklab-certificates > img {
-	margin: 16px;
-	max-width: 64px;
-	max-height: 64px;
+	margin: 8px;
+	width: 64px;
+	height: 64px;
 }
 
 div#projects {
@@ -89,13 +80,17 @@ div#projects div.title {
 	font-size: 24px;
 	font-weight: 900;
 }
-
 div#projects div.content {
-	margin-left: 32px;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
 }
 div.project {
 	display: flex;
 	flex-direction: column;
+	justify-content: flex-start;
+	width: 256px;
 	padding: 16px;
 	margin: 16px;
 	border-radius: 4px;
@@ -105,13 +100,18 @@ div.project {
 div.project div.name {
 	font-weight: 900;
 }
+div.project div.description {
+	align-self: flex-end;
+}
 div.project a.link {
 	text-decoration: none;
 	color: #aaa;
+	overflow-wrap: break-word;
 }
 div.project > div.tags {
 	display: flex;
 	flex-direction: row;
+	flex-wrap: wrap;
 }
 div.project > div.tags > div.tag {
 	background-color: #553F64;
@@ -141,5 +141,18 @@ div.project > div.tags > div.tag {
 		min-width: 0px !important;
 		max-width: 12cm !important;
 		height: 28cm !important;
+	}
+}
+
+@media screen and (orientation: portrait) {
+	div.section {
+		display: flex;
+		flex-direction: column-reverse;
+	}
+	div.left-panel {
+		max-width: none !important;
+	}
+	div.right-panel {
+		max-width: none !important;
 	}
 }

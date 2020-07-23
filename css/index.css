@@ -2,8 +2,9 @@ div.section {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
+	padding: 16px;
 }
 
 div.section > h1 {
-	font-size: 72px;
+	font-size: 32px;
 }
