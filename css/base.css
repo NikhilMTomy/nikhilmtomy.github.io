@@ -6,9 +6,9 @@
 body {
 	display: flex;
 	flex-direction: column;
+	background-color: #493657;
 
 	margin: 0px;
-	background-color: #493657;
 	color: #DFF3E3;
 	font-family: 'Roboto Mono', monospace;
 }
@@ -17,6 +17,7 @@ div.nav {
 	display: flex;
 	flex-direction: row;
 	justify-content: center;
+	background-color: #493657;
 	align-items: center;
 }
 
