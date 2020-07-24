@@ -6,10 +6,9 @@
 body {
 	display: flex;
 	flex-direction: column;
-	background-color: #493657;
 
 	margin: 0px;
-	color: #DFF3E3;
+	color: #000;
 	font-family: 'Roboto Mono', monospace;
 	text-size-adjust: none;
 	-webkit-text-size-adjust: none;
@@ -21,29 +20,28 @@ div.nav {
 	display: flex;
 	flex-direction: row;
 	justify-content: center;
-	background-color: #493657;
+	background-color: #eee;
 	align-items: center;
 }
 
-div.nav > div.link {
+div.nav > a.link {
 	margin: 8px;
 	padding: 8px;
+	border-radius: 4px;
 }
 
-div.nav > div.link:hover > a {
-	color: #CE7DA5;
-}
-
-div.nav > div.link.active {
-	background-color: #402F4B;
-}
-div.nav > div.link.active > a{
-	color: #FFD1BA;
-}
-
-div.nav > div.link > a {
-	color: #DFF3E3;
+div.nav > a.link {
 	text-decoration: none;
+	color: #000;
+}
+div.nav > a.link.active {
+	background-color: #ddd;
+	color: #000;
+}
+div.nav > a.link:hover {
+	cursor: pointer;
+	background-color: #888;
+	color: #fff;
 }
 
 div.nav > div.separator {
@@ -61,21 +59,18 @@ div.social {
 	right: 0;
 }
 
-div.social > div.link {
+div.social > a.link {
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	padding: 4px;
-}
-
-div.social > div.link:hover > a{
-	color: #CE7DA5;
-}
-
-div.social > div.link > a {
 	height: 24px;
 	width: 24px;
 	font-size: 24px;
 	text-decoration: none;
-	color: #DFF3E3;
+	color: #000;
+}
+div.social > a.link:hover {
+	color: #888;
+	cursor: pointer;
 }

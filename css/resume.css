@@ -12,19 +12,23 @@ h1 {
 }
 div.left-panel {
 	display: flex;
-	background-color: #493657;
+	background-color: #eee;
 	flex-direction: column;
 	flex: 0 0 300px;
 	flex-wrap: wrap;
 	padding: 32px;
+	color: #000;
 }
 div.left-panel > div.title {
 	font-size: 18px;
 	font-weight: 600;
 }
+div.left-panel div.label {
+	width: 24px;
+}
 div.left-panel a {
 	text-decoration: none;
-	color: #DFF3E3;
+	color: #000;
 	overflow-wrap: break-word;
 }
 div.right-panel {
@@ -51,7 +55,7 @@ div.right-panel a {
 }
 div.horizontal-line {
 	height: 1px;
-	background-color: #fff;
+	background-color: #000;
 	margin: 4px 4px;
 }
 .qwiklab-certificates {
@@ -76,7 +80,7 @@ div#projects {
 }
 
 div#projects div.title {
-	color: #493657;
+	color: #000;
 	font-size: 24px;
 	font-weight: 900;
 }
@@ -91,11 +95,12 @@ div.project {
 	flex-direction: column;
 	justify-content: flex-start;
 	width: 256px;
-	padding: 16px;
-	margin: 16px;
+	padding: 8px;
+	margin: 8px;
 	border-radius: 4px;
-	background-color: #493657;
+	background-color: #eee;
 	page-break-inside: avoid;
+	color: #000;
 }
 div.project div.name {
 	font-weight: 900;
@@ -105,7 +110,7 @@ div.project div.description {
 }
 div.project a.link {
 	text-decoration: none;
-	color: #aaa;
+	color: #777;
 	overflow-wrap: break-word;
 }
 div.project > div.tags {
@@ -114,7 +119,7 @@ div.project > div.tags {
 	flex-wrap: wrap;
 }
 div.project > div.tags > div.tag {
-	background-color: #553F64;
+	background-color: #ddd;
 	font-size: 10px;
 	padding: 2px 8px;
 	border-radius: 8px;
