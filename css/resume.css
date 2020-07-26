@@ -13,6 +13,7 @@ a {
 h1 {
 	font-size: 32px;
 	font-weight: 900;
+	margin-block-start: 0;
 }
 div.left-panel {
 	display: flex;
@@ -147,6 +148,11 @@ div.project div.description {
 div.project div.separator {
 	height: 8px;
 }
+div.project div.divider {
+	height: 1px;
+	background-color: #000;
+	margin: 2px 0px;
+}
 div.project a.link {
 	text-decoration: none;
 	color: #777;
@@ -171,19 +177,22 @@ div.project > div.tags > div.tag {
 }
 
 @media print {
+	div#education {
+		display: none;
+	}
 	div.nav {
 		display: none;
 	}
 	div.left-panel {
 		font-size: 14px !important;
 		min-width: 0px !important;
-		max-width: 6cm !important;
+		max-width: 5.5cm !important;
 		height: 28cm !important;
 	}
 	div.right-panel {
 		flex: 1 !important;
 		min-width: 0px !important;
-		max-width: 12cm !important;
+		max-width: 15.5cm !important;
 		height: 28cm !important;
 	}
 }
