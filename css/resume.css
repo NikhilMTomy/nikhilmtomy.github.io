@@ -21,7 +21,7 @@ div.left-panel {
 	flex-direction: column;
 	flex: 0 0 300px;
 	flex-wrap: wrap;
-	padding: 32px;
+	padding: 16px;
 	color: #000;
 }
 div.left-panel > div.title {
@@ -40,7 +40,7 @@ div.right-panel {
 	flex: 1;
 	color: black;
 	background-color: #fff;
-	padding: 32px;
+	padding: 16px;
 }
 div.right-panel > div.title {
 	font-size: 18px;
@@ -107,6 +107,24 @@ div.horizontal-line {
 	margin: 8px;
 	width: 64px;
 	height: 64px;
+}
+
+div#education {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: flex-start;
+	padding: 16px;
+	background-color: #fff;
+}
+div#education > table td {
+	background-color: #eee;
+	padding: 8px;
+}
+div#education div.title {
+	color: #000;
+	font-size: 24px;
+	font-weight: 900;
 }
 
 div#projects {
@@ -177,9 +195,6 @@ div.project > div.tags > div.tag {
 }
 
 @media print {
-	div#education {
-		display: none;
-	}
 	div.nav {
 		display: none;
 	}
@@ -187,7 +202,7 @@ div.project > div.tags > div.tag {
 		font-size: 14px !important;
 		min-width: 0px !important;
 		max-width: 5.5cm !important;
-		height: 28cm !important;
+		height: 28.8cm !important;
 	}
 	div.right-panel {
 		flex: 1 !important;
